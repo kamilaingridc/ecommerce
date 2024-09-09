@@ -1,11 +1,11 @@
 <form [formGroup]="login">
     <p>Username</p>
-    <input type="text" [formControl]="login.controls.username" />
+    <input class="bg-slate-200" type="text" [formControl]="login.controls.username" />
     
     <p>Password</p>
-    <input type="text" [formControl]="login.controls.password">
+    <input class="bg-slate-200" type="text" [formControl]="login.controls.password">
     
-    <button>Send</button>
+    <button (click)="navigate()">Send</button>
 </form>
 
 {{ login.controls.username.value }}
